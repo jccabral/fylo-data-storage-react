@@ -1,10 +1,13 @@
 import React from 'react';
+import Menu from './components/Menu';
+import StorageInfo from './components/StorageInfo';
 
 const App = () => {
   return (
-    <div className="App">
-
-    </div>
+    <main className="App">
+      <Menu />
+      <StorageInfo />
+    </main>
   );
 }
 
