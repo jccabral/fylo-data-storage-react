@@ -1,5 +1,19 @@
 @import 'config/colors';
+@import 'config/font';
 
 .App {
     min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: $raleway;
+    font-size: $size14;
+
+    background-color: $very-dark-blue;
+    background-image: url('/static/img/bg-desktop.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
