@@ -1,12 +1,11 @@
 import React from 'react';
+import StoragePopup from './StoragePopup';
 
 const StorageInfo = () => {
     return(
         <section className="storage-info">
 
-           {/*  <div>
-                remaining storage 185 GB Left
-            </div> */}
+            <StoragePopup />
 
             <p>You’ve used <b>815 GB</b> of your storage</p>
 
