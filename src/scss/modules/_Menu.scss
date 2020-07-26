@@ -1,20 +1,14 @@
-@import 'config/colors';
+@import 'config/mixins';
 
 $icon-size: 4em;
 
 .menu {
-    width: 21em;
-    height: 12em;
+    @include card(21em, 12em);
 
     padding: 3em 5em 1em 3em;
     margin: 0 4em 0 0;
 
-    background: $dark-blue;
     border-radius: 12px 120px 12px 12px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
     &__logo {
         display: flex;

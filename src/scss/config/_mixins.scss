@@ -1,0 +1,12 @@
+@import 'colors';
+
+@mixin card($width, $height) {
+    width: $width;
+    height: $height;
+
+    background: $dark-blue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
