@@ -10,3 +10,18 @@
     flex-direction: column;
     justify-content: center;
 }
+
+@mixin shadow {
+    box-shadow: 4px 4px 1em 2px rgba($color: #000000, $alpha: 0.1);
+}
+
+@mixin storage-bar($height, $color, $width: 100%, $justify: start) {
+    width: $width;
+    height: $height;
+    background: $color;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+}

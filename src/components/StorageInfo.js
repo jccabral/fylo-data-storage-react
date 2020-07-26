@@ -4,17 +4,23 @@ const StorageInfo = () => {
     return(
         <section className="storage-info">
 
-            <div>
+           {/*  <div>
                 remaining storage 185 GB Left
-            </div>
+            </div> */}
 
-            <p>You’ve used 815 GB of your storage</p>
+            <p>You’ve used <b>815 GB</b> of your storage</p>
 
-            <div>
-                storage bar component
+            <div className="storage-info__bar">
+                <div className="storage-info__bar-content">
+                    <div className="storage-info__bar-used">
+                        <div className="storage-info__bar-dot"></div>
+                    </div>
+                </div>
 
-                0 GB
-                1000 GB
+                <div className="storage-info__bar-text">
+                    <p>0 GB</p>
+                    <p>1000 GB</p>
+                </div>
             </div>
         </section>
     )

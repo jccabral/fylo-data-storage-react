@@ -1,5 +1,46 @@
 @import 'config/mixins';
+@import 'config/font';
+@import 'config/colors';
 
 .storage-info {
-    @include card(40em, 10em);
+    @include card(40em, 5em);
+    @include shadow;
+
+    border-radius: 12px;
+    padding: 4em;
+
+    color: white;
+    font-size: $size14;
+    font-weight: $regular;
+
+    b {
+        font-weight: $bold;
+    }
+
+    &__bar {
+        width: 100%;
+
+        &-content {
+            @include storage-bar(1.7em, $very-dark-blue);
+        }
+
+        &-used {
+            @include storage-bar(1.1em, $gradient, 80%, flex-end);
+
+            margin: 0 0.3em;
+        }
+
+        &-dot {
+            height: 0.9em;
+            width: 0.9em;
+            border-radius: 50%;
+            background: white;
+            margin: 0 0.2em 1px 0;
+        }
+
+        &-text {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 }
