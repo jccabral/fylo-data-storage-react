@@ -11,14 +11,14 @@ const Menu = () => {
     return(
         <section className="menu">
             <div className="menu__logo">
-                <img src={process.env.PUBLIC_URL + '/static/svg/logo.svg'} />
+                <img src={process.env.PUBLIC_URL + '/static/svg/logo.svg'} alt="logo" />
             </div>
 
             <div className="menu__icons">
                 {
                     icons.map((icon, i) => (
                         <div className="menu__icon" key={i}>
-                            <img src={process.env.PUBLIC_URL + '/static/svg/' + icon} />
+                            <img src={process.env.PUBLIC_URL + '/static/svg/' + icon} alt="icon"/>
                         </div>
                     ))
                 }

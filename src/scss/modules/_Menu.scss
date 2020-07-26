@@ -49,3 +49,11 @@ $icon-size: 4em;
         justify-content: left;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .menu {
+        @include card(18em, 10em);
+        
+        margin: 0 0 2em 0;
+    }
+}

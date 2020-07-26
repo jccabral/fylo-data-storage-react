@@ -93,3 +93,20 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .storage-info {
+        @include card(18em, 2em);
+
+        padding-bottom: 6em;
+
+        &__popup {
+            top: 9em;
+            left: calc(50% - 7.5em);
+
+            &::after {
+                content: none;
+            }
+        }
+    }
+}

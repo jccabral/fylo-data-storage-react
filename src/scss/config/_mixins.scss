@@ -15,7 +15,7 @@
     box-shadow: 4px 4px 1em 2px rgba($color: #000000, $alpha: 0.1);
 }
 
-@mixin storage-bar($height, $color, $width: 100%, $justify: start) {
+@mixin storage-bar($height, $color, $width: 100%, $justify: flex-start) {
     width: $width;
     height: $height;
     background: $color;
