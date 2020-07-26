@@ -5,8 +5,10 @@ import StorageInfo from './components/StorageInfo';
 const App = () => {
   return (
     <main className="App">
-      <Menu />
-      <StorageInfo />
+      <div className="wrapper">
+        <Menu />
+        <StorageInfo />
+      </div>
     </main>
   );
 }
